@@ -141,6 +141,11 @@
                                             <li>Coded form of plain text</li>
                                         </ul>
                                     </li>
+                                    <li>Secret key<ul>
+                                            <li>An input to encryption which helps in specific transformations and
+                                                substitutions</li>
+                                        </ul>
+                                    </li>
                                     <li>Encryption or Enciphering<ul>
                                             <li>Converting Plain text into Cipher text</li>
                                         </ul>
@@ -169,32 +174,167 @@
                                             <li>Superset of Cryptography and Cryptanalysis</li>
                                         </ul>
                                     </li>
+                                    <li>Vulnerability<ul>
+                                            <li>Weakness in the system</li>
+                                        </ul>
+                                    </li>
+                                    <li>Threat<ul>
+                                            <li>Set of circumstances with potential to harm the computing system
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>Control<ul>
+                                            <li>Preventing Threat from reaching the Vulnerability</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                             <li>The OSI security architecture</li>
-                            <li>Network security model</li>
-                            <li>Classical Encryption techniques</li>
-                            <li>Symmetric cipher model</li>
-                            <li>Mono-alphabetic and polyalphabetic substitution techniques<ul>
-                                    <li>Vigenere cipher</li>
-                                    <li>Playfair cipher</li>
-                                    <li>Hill cipher</li>
+                            <li>Network security model<ul>
+                                    <li>Major Tasks in creating one<ul>
+                                            <li>Purpose of making the algorithm should not be defeated by the
+                                                opponent</li>
+                                            <li>Generate secret info to be used in algo</li>
+                                            <li>Develop methods to distribute and share this secret info</li>
+                                            <li>Specify a protocol</li>
+                                        </ul>
+                                    </li>
+                                    <li>Techniques<ul>
+                                            <li>Transform the information itself so that unreadable by the
+                                                opponent(attacker)</li>
+                                            <li>Send some secret which should be unknown to the opponent(attacker)
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>Get a trusted Third party for secure transmission concerning the
+                                        authenticity of the message</li>
                                 </ul>
                             </li>
-                            <li>Transposition techniques<ul>
-                                    <li>Keyed and keyless transposition ciphers</li>
-                                    <li>Steganography. </li>
+                            <li>Symmetric cipher model<ul>
+                                    <li>Same key is shared by both clients</li>
+                                    <li>As same key is required to encipher an decipher</li>
+                                </ul>
+                            </li>
+                            <li>Classical Encryption techniques<ul>
+                                    <li>Substitution techniques<ul>
+                                            <li>Mono-alphabetic<ul>
+                                                    <li>Caesar Cipher<ul>
+                                                            <li>Get numerical Equivalent</li>
+                                                            <li>Shift the numbers</li>
+                                                            <li>C = E(k,p) = (p+k) mod 26</li>
+                                                            <li>p = D(k,C) = (C-k) mod 26</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>Poly-alphabetic <ul>
+                                                    <li>Vigenere cipher<ul>
+                                                            <li>Modified Caesar</li>
+                                                            <li>Method 1<ul>
+                                                                    <li>getting numerical equivalent of all
+                                                                        characters</li>
+                                                                    <li>Adding numbers of plain text and the key at
+                                                                        the round of 26</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Method 2<ul>
+                                                                    <li>Using a table with all alphabets in sequence
+                                                                        on rows and columns</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Playfair cipher<ul>
+                                                            <li>Get a 5x5 Mattrix</li>
+                                                            <li>Arrange alphabets in the mattrix and combine i,j in
+                                                                one (because maths)</li>
+                                                            <li>Fill repeating Characters with 'X'</li>
+                                                            <li>2 Letters in plain text in same column replace with
+                                                                the one below it</li>
+                                                            <li>Otherwise replace based on rows and columns</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Hill cipher<ul>
+                                                            <li>Works on matrix multiplication</li>
+                                                            <li>Assign numbers to each alphabet</li>
+                                                            <li>C = P K mod 26</li>
+                                                            <li>Take determinant of each matrix</li>
+                                                            <li>Transpose the original matrix</li>
+                                                            <li>Determinant of each 2x2 minor matrices</li>
+                                                            <li>Create matrix of co-factors</li>
+                                                            <li>Divide each adjugate by the determinant</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Vernam Cipher<ul>
+                                                            <li>Complicated and not in syllabus</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>Transposition techniques<ul>
+                                            <li>Keyless <ul>
+                                                    <li>Railfence Cipher<ul>
+                                                            <li>Write plain text in diagonals to look like railfence
+                                                            </li>
+                                                            <li>Read just the uppper row and then the lower row</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>Keyed<ul>
+                                                    <li>Single Columnar<ul>
+                                                            <li>Write plain text row by row in a rectangle depending
+                                                                on key size</li>
+                                                            <li>Then read column by column</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Double Columnar<ul>
+                                                            <li>Same as single instead use 2 key</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>Steganography<ul>
+                                            <li>Hide secret inside something usual stuff like image or sound </li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     <li>Number Theory<ul>
-                            <li>Modular Arithmetic and Number Theory</li>
+                            <li>Modular Arithmetic and Number Theory<ul>
+                                    <li>[(a mod n) + (b mod n)] mod n = (a+b) mod n</li>
+                                    <li>[(a mod n) - (b mod n)] mod n = (a-b) mod n</li>
+                                    <li>[(a mod n) * (b mod n)] mod n = (a*b) mod n</li>
+                                </ul>
+                            </li>
                             <li>Euclid‘s algorithm</li>
                             <li>Prime numbers</li>
-                            <li>Fermat‘s and Euler‘s theorem</li>
-                            <li>Testing for primality</li>
-                            <li>The Chinese remainder theorem</li>
+                            <li>Euclid‘s theorem</li>
+                            <li>Proves every a and n that are relatively prime if<ul>
+                                    <li>aϕ(n)≡1(mod n)</li>
+                                </ul>
+                            </li>
+                            <li>Fermat‘s theorem<ul>
+                                    <li>For any prime number p, 'a' is an integer which is not divisible by the p,
+                                        then a^(p-1) = 1(mod p)</li>
+                                </ul>
+                            </li>
+                            <li>Testing for primality<ul>
+                                    <li>If a number is prime number or not</li>
+                                </ul>
+                            </li>
+                            <li>The Chinese remainder theorem<ul>
+                                    <li>There are certain numbers repeatedly divided by 3 and number is 2,
+                                        repeatedly divided by 5 and remainder is 3 and repeatedly divided by 7 and
+                                        remainder is 2</li>
+                                </ul>
+                            </li>
                             <li>Discrete logarithms</li>
                         </ul>
                     </li>
