@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../../favicon/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #333333;
+            color: #ffffff;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        main {
+
+            color: #ffffff;
+            text-align: center;
+            float: right;
+            text-transform: uppercase;
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 450%;
+            width: 100%;
+        }
+
+        li {
+            font-size: 20px;
+            color: #ffffff;
+
+        }
+
+        .collapsibleList li {
+            list-style-image: url('icons/button.png');
+            cursor: auto;
+        }
+
+        li.collapsibleListOpen {
+            list-style-image: url('icons/button-open.png');
+            cursor: pointer;
+        }
+
+        li.collapsibleListClosed {
+            list-style-image: url('icons/button-closed.png');
+            cursor: pointer;
+        }
+
+        footer {
+            bottom: 0;
+            right: 0;
+            position: fixed;
+            text-align: right;
+            float: right;
+
+        }
+    </style>
+    <title> CSS PATRAVALI</title>
+</head>
+
+<body>
+    <main> PATRAVALI </main>
+    <ul class="collapsibleList">
+
+        <li>CSS<ul>
+                <li>Chapter 1<ul>
+                        <li>Introduction<ul>
+                                <li>Security Goals</li>
+                                <li>Services</li>
+                                <li>Mechanisms and attacks</li>
+                                <li>The OSI security architecture</li>
+                                <li>Network security model</li>
+                                <li>Classical Encryption techniques</li>
+                                <li>Symmetric cipher model</li>
+                                <li>Mono-alphabetic and polyalphabetic substitution techniques
+                                    <ul>
+                                        <li>Vigenere cipher</li>
+                                        <li>Playfair cipher</li>
+                                        <li>Hill cipher</li>
+                                    </ul>
+                                </li>
+                                <li>Transposition techniques<ul>
+                                        <li>Keyed and keyless transposition ciphers</li>
+                                        <li>Steganography. </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Number Theory<ul>
+                                <li>Modular Arithmetic and Number Theory:- Euclid‘s
+                                    algorithm-–Prime numbers-Fermat‘s and Euler‘s theorem-
+                                    Testing for primality -The Chinese remainder theorem,
+                                    Discrete logarithms.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <footer>
+        <div style="text-align-last: center;">
+            <p> © 2021 Vinay Panchal All Rights Reserved.</p>
+            <p><a href="http://www.vinaypanchal.com/">vinaypanchal.com</a></p>
+        </div>
+    </footer>
+
+</body>
+<script type="text/javascript" src="CollapsibleLists.src.js"></script>
+
+
+</html>

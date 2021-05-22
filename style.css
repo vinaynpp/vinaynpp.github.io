@@ -1,0 +1,112 @@
+body {
+    background-color: #333333;
+    font: 16px 'Indie Flower';
+    width: 90%;
+    padding: 4.5%;
+    /*
+    background-image: url('https://drive.google.com/thumbnail?id=1WEEVNw1JHg4fKnQZcLhYEmfwqTS0w0Mq');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: auto;
+*/
+}
+
+main {
+    color: #ffffff;
+    text-align: center;
+    float: right;
+    text-transform: uppercase;
+    font-family: "Sofia";
+    font-size: 450%;
+    width: 100%;
+}
+
+h6 {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 100%;
+}
+
+H5 {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 300%;
+}
+
+h4 {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 150%;
+}
+
+h3 {
+    color: #ffffff;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 100%;
+}
+
+p {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.aaju {
+    width: 35%;
+    float: left;
+}
+
+.baaju {
+    width: 55%;
+    float: left;
+    background-color: #616161;
+    padding: 3%;
+}
+
+table {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px;
+    border: 40px #333333;
+    border-spacing: 10px;
+    border-color: black;
+}
+
+td {
+    text-align: center;
+    padding: 20px;
+    border: 40px #333333;
+    border-spacing: 10px;
+    border-color: black;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+caption {
+    font-family: "Sofia";
+    font-size: xx-large;
+    color: #ffffff;
+}
+
+footer {
+    float: bottom;
+    text-align: center;
+    padding: 10% 10%;
+}
