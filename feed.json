@@ -5,10 +5,23 @@
     "home_page_url": "https://vinaypanchal.com",
     "feed_url": "https://vinaypanchal.com/feed.json",
     "user_comment": "",
-    "icon": "https://vinaypanchal.com/media/website/vinay-clipart.png",
     "author": {
         "name": "Vinay Panchal"
     },
     "items": [
+        {
+            "id": "https://vinaypanchal.com/winmod/",
+            "url": "https://vinaypanchal.com/winmod/",
+            "title": "WINMOD",
+            "summary": " WINMOD VERSION FILE NAME BIT SIZE FILE SIZE LIVE / INSTALLABLE&hellip;",
+            "content_html": "<p> </p>\n<table><caption>WINMOD</caption>\n<tbody>\n<tr>\n<th>VERSION</th>\n<th>FILE NAME</th>\n<th>BIT SIZE</th>\n<th>FILE SIZE</th>\n<th>LIVE / INSTALLABLE</th>\n<th>DETAILS</th>\n<th>TELEGRAM</th>\n<th><a href=\"https://mega.nz/aff=i50VOlZfy2s\" target=\"_blank\" rel=\"noopener\">MEGA</a></th>\n</tr>\n<!--\n\n  STENSIL FOR table\n\n\n\n      <tr>\n\n        <td>....</td>\n\n        <td></td>\n\n        <td>BIT</td>        \n\n        <td>GB</td>\n\n        <td>LIVE/INSTALLABLE</td>       \n\n        <td>NOICE</td>\n\n        <td><a href=\"https://t.me/winmod/5\" target=\"_blank\" title=\"OPEN IN NEW TAB\">LINK</a></td>     \n\n        <td><a href=\"https://mega.nz/folder/4xdSVKZJ#RGqkPbvguS_9_MDh7yCmUw\" target=\"_blank\" title=\"OPEN IN NEW TAB\">LINK</a></td>\n\n      </tr>\n\n\n\n\n\n-->\n<tr>\n<td>2004.0.1.1.0.5</td>\n<td>WINX86LITE1</td>\n<td>32BIT</td>\n<td>2.2GB</td>\n<td>INSTALLABLE</td>\n<td>COMPRESSED AFTER REMOVING WINDOWS APPS, SYSTEM APPS,INTERNET EXPLORER, SECURITY SERVICES, CORTANA, ONEDRIVE, MEDIA APPLICATIONS AND SOME EXTRA FEATURES</td>\n<td><a href=\"https://t.me/winmod/5\" target=\"_blank\" title=\"OPEN IN NEW TAB\" rel=\"noopener\">LINK</a></td>\n<td><a href=\"https://mega.nz/folder/4xdSVKZJ#RGqkPbvguS_9_MDh7yCmUw\" target=\"_blank\" title=\"OPEN IN NEW TAB\" rel=\"noopener\">LINK</a></td>\n</tr>\n<tr>\n<td>2004.0.0.1.0.4</td>\n<td>WINX32LITE1</td>\n<td>32BIT</td>\n<td>2.7GB</td>\n<td>INSTALLABLE</td>\n<td>REMOVED WINDOWS APPS, SYSTEM APPS,INTERNET EXPLORER, SECURITY SERVICES, CORTANA, ONEDRIVE, MEDIA APPLICATIONS AND SOME EXTRA FEATURES</td>\n<td><a href=\"https://t.me/winmod/5\" target=\"_blank\" title=\"OPEN IN NEW TAB\" rel=\"noopener\">LINK</a></td>\n<td><a href=\"https://mega.nz/folder/4xdSVKZJ#RGqkPbvguS_9_MDh7yCmUw\" target=\"_blank\" title=\"OPEN IN NEW TAB\" rel=\"noopener\">LINK</a></td>\n</tr>\n<tr>\n<td>2004.0.1.1.0.3</td>\n<td>WINX86LITE</td>\n<td>32BIT</td>\n<td>2.3GB</td>\n<td>INSTALLABLE</td>\n<td>COMPRESSED AFTER REMOVING WINDOWS APPS AND SOME EXTRA FEATURES</td>\n<td><a href=\"https://t.me/winmod/5\" target=\"_blank\" title=\"OPEN IN NEW TAB\" rel=\"noopener\">LINK</a></td>\n<td><a href=\"https://mega.nz/folder/4xdSVKZJ#RGqkPbvguS_9_MDh7yCmUw\" target=\"_blank\" title=\"OPEN IN NEW TAB\" rel=\"noopener\">LINK</a></td>\n</tr>\n<tr>\n<td>2004.0.0.1.0.2</td>\n<td>WINX32LITE</td>\n<td>32BIT</td>\n<td>3.5GB</td>\n<td>INSTALLABLE</td>\n<td>REMOVED WINDOWS APPS AND SOME EXTRA FEATURES</td>\n<td><a href=\"https://t.me/winmod/5\" target=\"_blank\" title=\"OPEN IN NEW TAB\" rel=\"noopener\">LINK</a></td>\n<td><a href=\"https://mega.nz/folder/4xdSVKZJ#RGqkPbvguS_9_MDh7yCmUw\" target=\"_blank\" title=\"OPEN IN NEW TAB\" rel=\"noopener\">LINK</a></td>\n</tr>\n<tr>\n<td>2004.1.0.1.0.1</td>\n<td>BETA1</td>\n<td>64BIT</td>\n<td>5.3GB</td>\n<td>INSTALLABLE</td>\n<td>REMOVED WINDOWS APPS AND SOME EXTRA FEATURES</td>\n<td><a href=\"https://t.me/winmod/5\" target=\"_blank\" title=\"OPEN IN NEW TAB\" rel=\"noopener\">LINK</a></td>\n<td><a href=\"https://mega.nz/folder/4xdSVKZJ#RGqkPbvguS_9_MDh7yCmUw\" target=\"_blank\" title=\"OPEN IN NEW TAB\" rel=\"noopener\">LINK</a></td>\n</tr>\n</tbody>\n</table>\n<div><br><br><br>HOW VERSIONING IS DONE OVER HERE <br><br>2004 . 1 . 0 . 1 . 0 . 1 <br>SOURCE VERSION . BIT . COMPRESSION TYPE . COMPOSITION TYPE . USAGE TYPE . SERIAL NUMBER<br><br>SOURCE VERSION - FIRST TWO NUMBERS REPRESENT YEAR AND SECOND TWO REPRESENT MONTH <br>BIT - 32 : 0 , 64 : 1 <br>COMPRESSION TYPE - WIM : 0 , ESD : 1 <br>COMPOSITION TYPE - NORMAL : 0 , LITE : 1 , FULL : 2 , EXTRA : 3 <br>USAGE TYPE - INSTALLABLE : 0 , LIVE : 1 <br>SERIAL NUMBER - STARTS FROM 1<br><br><br></div>",
+            "author": {
+                "name": "Vinay Panchal"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-07-24T21:47:53+05:30",
+            "date_modified": "2021-07-24T22:35:11+05:30"
+        }
     ]
 }
