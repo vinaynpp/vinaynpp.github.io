@@ -1,0 +1,14 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Vinay Panchal",
+    "description": "",
+    "home_page_url": "https://vinaypanchal.com",
+    "feed_url": "https://vinaypanchal.com/feed.json",
+    "user_comment": "",
+    "icon": "https://vinaypanchal.com/media/website/vinay-clipart.png",
+    "author": {
+        "name": "Vinay Panchal"
+    },
+    "items": [
+    ]
+}

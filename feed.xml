@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Vinay Panchal</title>
+    <link href="https://vinaypanchal.com/feed.xml" rel="self" />
+    <link href="https://vinaypanchal.com" />
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <author>
+        <name>Vinay Panchal</name>
+    </author>
+    <id>https://vinaypanchal.com</id>
+
+</feed>
