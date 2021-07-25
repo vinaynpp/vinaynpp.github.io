@@ -3,12 +3,39 @@
     <title>Vinay Panchal</title>
     <link href="https://vinaypanchal.com/feed.xml" rel="self" />
     <link href="https://vinaypanchal.com" />
-    <updated>2021-07-24T22:35:11+05:30</updated>
+    <updated>2021-07-25T18:54:07+05:30</updated>
     <author>
         <name>Vinay Panchal</name>
     </author>
     <id>https://vinaypanchal.com</id>
 
+    <entry>
+        <title>WHO AM I</title>
+        <author>
+            <name>Vinay Panchal</name>
+        </author>
+        <link href="https://vinaypanchal.com/who-am-i/"/>
+        <id>https://vinaypanchal.com/who-am-i/</id>
+
+        <updated>2021-07-25T18:54:07+05:30</updated>
+            <summary>
+                <![CDATA[
+                     Your time is limited, So don't waste it living someone else's&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <blockquote>
+<p class="align-center">Your time is limited, So don't waste it living someone else's life;</p>
+<p class="align-center">Don't let noice of other's opinion drown down your own inner voice;</p>
+<p class="align-center">Have the courage to follow your heart and Intuition, They somehow already know what you truely want to become;</p>
+<p class="align-center">Everything else is secondary</p>
+<p class="align-center"><em>- Steve jobs</em></p>
+</blockquote>
+<p>The quote in which I firmly believe<br>That's the reason, I am obsessed with working on my own projects.<br>Curious about usual and unusual stuff.<br>Great with understanding psychology.<br>I love applying different approach to things.<br>At the core, I am passionate about Computers and mend to meliorate better.<br>Feel free to reach out if you need emotional support, advice, person to work on projects, we can get it done together</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>WINMOD</title>
         <author>
