@@ -3,12 +3,135 @@
     <title>Keen Psyche</title>
     <link href="https://vinaypanchal.com/feed.xml" rel="self" />
     <link href="https://vinaypanchal.com" />
-    <updated>2021-11-29T18:32:57+05:30</updated>
+    <updated>2021-11-29T21:42:32+05:30</updated>
     <author>
         <name>Vinay Panchal</name>
     </author>
     <id>https://vinaypanchal.com</id>
 
+    <entry>
+        <title>Simple Search Bot in Python</title>
+        <author>
+            <name>Vinay Panchal</name>
+        </author>
+        <link href="https://vinaypanchal.com/simple-search-bot-in-python.html"/>
+        <id>https://vinaypanchal.com/simple-search-bot-in-python.html</id>
+            <category term="Coding"/>
+
+        <updated>2021-11-29T21:42:32+05:30</updated>
+            <summary>
+                <![CDATA[
+                    Greetings!!! In this blog we will see how to make a Bot&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Greetings!!!</p>
+<p>In this blog we will see how to make a Bot in python which will search everything you copy to clipboard. Source code at the end of blog.</p>
+<p>Past Covid-19 all examinations are conducted online and we all know why study if we can search everything on the internet. Particularly my university asked us to attempt exam through google form. So we had to follow a sequence of steps to search each question on the internet and get the solution.</p>
+<ul>
+<li>Select the question and Hit Ctrl + C on the keyboard</li>
+<li>Open browser</li>
+<li>Visit each MCQ website where solutions can be available</li>
+<li>Search for solutions on all sites</li>
+</ul>
+<p>This steps had to be repeated for each and every question. Which felt hectic after few tests. So i wrote this bot which allowed me to perform just first step and rest were taken care by the bot.</p>
+<p>Enough ChitChat! Let's start with the actual code.</p>
+<p>First part will be importing the packages we will be needing to make this work.</p>
+<pre>from pynput import keyboard<br>import time<br>import clipboard<br>import webbrowser<br>import pip</pre>
+<p>Now you will be thinking...</p>
+<p>We imported everything but didn't install any package in our environment. Since this blog is all about automating steps we will be automating this part too. How? just copy paste this next block of code and run</p>
+<pre>def install(package):
+    if hasattr(pip, 'main'):
+        pip.main(['install', package])
+    else:
+        pip._internal.main(['install', package])
+
+
+if __name__ == '__main__':
+    install('pynput')
+    install('clipboard')
+    install('webbrowser')</pre>
+<p>Now that we have all setup we can go dive into the main logic. We will create a text file and list down all the sites on which we want to search for the solutions and name the file "sites.txt". Here is my list for reference.</p>
+<pre>sanfoundry.com
+examradar.com
+examveda.com
+coursehero.com
+careerride.com
+tuteehub.com
+quizelet.com
+brainscape.com
+compsciedu.com
+ciscopress.com
+gkseries.com
+engineeringinterviewquestions.com
+mcqslearns.com
+texalab.com
+brainly.in
+educationforever.in
+lecturenotes.in
+pinoybix.org
+calculator.in</pre>
+<p>Now we will ask for consent on which search engine to choose</p>
+<p>The one which keeps privacy safe - DuckDuckGo</p>
+<p>Or the one with plays with our privacy who's name shall not be taken (Google) </p>
+<pre>print("WHICH SEARCH ENGINE DO YOU USE?")
+print("ENTER '0' FOR DUCK DUCK GO ")
+print("OR ANY OTHER NUMBER FOR GOOGLE")
+bchoice = int(input("BE QUICK \n"))
+
+if bchoice == 0:
+    print("NOICE!!! SMORT!!! TOIT!!! KEEP USING DUCKDUCKGO")
+else:
+    print("LEVEL UP DUDE AND START USING DUCK DUCK GO")
+    time.sleep(3)
+    print("")
+    print("")
+    print("ANYWAYS")
+
+print("")
+print("")
+print("PORTAL STARTED")
+print("now select any text and press control plus C ")
+print("")</pre>
+<p>Let's create a funtion to use this all info and do actual work. we will see each task in function one by one. Start by saving clipboard string into a variable</p>
+<pre>text = clipboard.paste()</pre>
+<p>A query needs to be created so that we can search for it on any search engine. And that will be done by combining our text to be searched and the sites list. One more thing we cannot enter empty spaces in URL so we will replace them all with "+" symbol.</p>
+<pre>query = text + sites
+query = query.replace(" ", "+")
+</pre>
+<p>Compose final URL to be searched for based on the search engine choice and save it in a variable.</p>
+<pre>if bchoice == 0:
+    openbrow = "https://duckduckgo.com/?q=" + query
+else:
+    openbrow = "https://www.google.com/search?q=" + query</pre>
+<p>Now we can open web browser and enter the URL using "open" method on "webbrowser" but new window for every question will be mess so we keep the new attribute as "new=2" and we also want to keep that tab in focus so "autoraise=True"</p>
+<pre>webbrowser.open(openbrow, new=2, autoraise=True)</pre>
+<p>The final funtion will look as following</p>
+<pre>def function_1():
+    text = clipboard.paste()
+    print(text)
+
+    query = text + sites
+    query = query.replace(" ", "+")
+
+    if bchoice == 0:
+        openbrow = "https://duckduckgo.com/?q=" + query
+    else:
+        openbrow = "https://www.google.com/search?q=" + query
+
+    webbrowser.open(openbrow, new=2, autoraise=True)</pre>
+<p>Only thing left is to trigger this funtion when someone presses Ctrl key and C key at once. That's when a text is coppied into the clipboard. </p>
+<pre>with keyboard.GlobalHotKeys({
+    '&lt;ctrl&gt;+c': function_1}) as h:
+    h.join()</pre>
+<p>DONE!!! </p>
+<p>Now just run the file and you will be good to go.</p>
+<p>Source code of this entire bot can be found at <a href="https://github.com/vinaynpp/searchbot" title="Github link" target="_blank" rel="noopener noreferrer">https://github.com/vinaynpp/searchbot</a></p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>High School Research</title>
         <author>
@@ -16,15 +139,18 @@
         </author>
         <link href="https://vinaypanchal.com/high-school-research.html"/>
         <id>https://vinaypanchal.com/high-school-research.html</id>
+            <category term="Research"/>
 
-        <updated>2021-11-29T18:32:57+05:30</updated>
+        <updated>2021-11-29T18:46:32+05:30</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://vinaypanchal.com/media/posts/1/CAT-MONKEY-1.jpg" alt="" />
                      I was an average student in high school but my academic&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <img src="https://vinaypanchal.com/media/posts/1/CAT-MONKEY-1.jpg" alt="" />
                 <div class="separator" data-original-attrs="{&quot;style&quot;:&quot;&quot;}"><a data-original-attrs="{&quot;data-original-href&quot;:&quot;https://4.bp.blogspot.com/-AyrRq3NW1xA/WtMS3HbOp7I/AAAAAAAAABM/aVAtiz5QmcQhRwO7TrJXOMYRb8FMzvphwCLcBGAs/s1600/SCHOOL-1.jpg&quot;,&quot;style&quot;:&quot;&quot;}" href="https://draft.blogger.com/u/1/blog/post/edit/9202629767217652780/6165044741028720531"><img loading="lazy" src="https://4.bp.blogspot.com/-AyrRq3NW1xA/WtMS3HbOp7I/AAAAAAAAABM/aVAtiz5QmcQhRwO7TrJXOMYRb8FMzvphwCLcBGAs/s400/SCHOOL-1.jpg" data-is-external-image="true"  width="400" height="282" border="0" data-original-height="1132" data-original-width="1600"></a></div>
 <p><br><br></p>
 <div> I was an average student in high school but my academic performance was degrading as I moved on to higher grades. I didn't use to get good marks in history but scored well in science and mathematics. So I approached my school teacher for the solution. Her solution changed my approach towards studies. </div>

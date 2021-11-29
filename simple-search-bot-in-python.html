@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Simple Search Bot in Python - Keen Psyche</title><meta name="description" content="Greetings!!! In this blog we will see how to make a Bot&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://vinaypanchal.com/simple-search-bot-in-python.html"><link rel="alternate" type="application/atom+xml" href="https://vinaypanchal.com/feed.xml"><link rel="alternate" type="application/json" href="https://vinaypanchal.com/feed.json"><meta property="og:title" content="Simple Search Bot in Python"><meta property="og:site_name" content="Keen Psyche"><meta property="og:description" content="Greetings!!! In this blog we will see how to make a Bot&hellip;"><meta property="og:url" content="https://vinaypanchal.com/simple-search-bot-in-python.html"><meta property="og:type" content="article"><style>:root{--body-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--heading-font:var(--body-font);--logo-font:var(--body-font);--menu-font:var(--body-font)}</style><link rel="stylesheet" href="https://vinaypanchal.com/assets/css/style.css?v=76745b2d1daa10f2189da1ce17f88226"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://vinaypanchal.com/simple-search-bot-in-python.html"},"headline":"Simple Search Bot in Python","datePublished":"2021-11-29T21:02","dateModified":"2021-11-29T21:42","description":"Greetings!!! In this blog we will see how to make a Bot&hellip;","author":{"@type":"Person","name":"Vinay Panchal"},"publisher":{"@type":"Organization","name":"Vinay Panchal"}}</script></head><body><div class="container"><header class="header" id="js-header"><a href="https://vinaypanchal.com/" class="logo">Keen Psyche</a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"></ul></nav></header><main><article class="post wrapper"><header class="hero"><h1 class="post__title">Simple Search Bot in Python</h1></header><div class="post__entry"><p>Greetings!!!</p><p>In this blog we will see how to make a Bot in python which will search everything you copy to clipboard. Source code at the end of blog.</p><p>Past Covid-19 all examinations are conducted online and we all know why study if we can search everything on the internet. Particularly my university asked us to attempt exam through google form. So we had to follow a sequence of steps to search each question on the internet and get the solution.</p><ul><li>Select the question and Hit Ctrl + C on the keyboard</li><li>Open browser</li><li>Visit each MCQ website where solutions can be available</li><li>Search for solutions on all sites</li></ul><p>This steps had to be repeated for each and every question. Which felt hectic after few tests. So i wrote this bot which allowed me to perform just first step and rest were taken care by the bot.</p><p>Enough ChitChat! Let's start with the actual code.</p><p>First part will be importing the packages we will be needing to make this work.</p><pre>from pynput import keyboard<br>import time<br>import clipboard<br>import webbrowser<br>import pip</pre><p>Now you will be thinking...</p><p>We imported everything but didn't install any package in our environment. Since this blog is all about automating steps we will be automating this part too. How? just copy paste this next block of code and run</p><pre>def install(package):
+    if hasattr(pip, 'main'):
+        pip.main(['install', package])
+    else:
+        pip._internal.main(['install', package])
+
+
+if __name__ == '__main__':
+    install('pynput')
+    install('clipboard')
+    install('webbrowser')</pre><p>Now that we have all setup we can go dive into the main logic. We will create a text file and list down all the sites on which we want to search for the solutions and name the file "sites.txt". Here is my list for reference.</p><pre>sanfoundry.com
+examradar.com
+examveda.com
+coursehero.com
+careerride.com
+tuteehub.com
+quizelet.com
+brainscape.com
+compsciedu.com
+ciscopress.com
+gkseries.com
+engineeringinterviewquestions.com
+mcqslearns.com
+texalab.com
+brainly.in
+educationforever.in
+lecturenotes.in
+pinoybix.org
+calculator.in</pre><p>Now we will ask for consent on which search engine to choose</p><p>The one which keeps privacy safe - DuckDuckGo</p><p>Or the one with plays with our privacy who's name shall not be taken (Google) </p><pre>print("WHICH SEARCH ENGINE DO YOU USE?")
+print("ENTER '0' FOR DUCK DUCK GO ")
+print("OR ANY OTHER NUMBER FOR GOOGLE")
+bchoice = int(input("BE QUICK \n"))
+
+if bchoice == 0:
+    print("NOICE!!! SMORT!!! TOIT!!! KEEP USING DUCKDUCKGO")
+else:
+    print("LEVEL UP DUDE AND START USING DUCK DUCK GO")
+    time.sleep(3)
+    print("")
+    print("")
+    print("ANYWAYS")
+
+print("")
+print("")
+print("PORTAL STARTED")
+print("now select any text and press control plus C ")
+print("")</pre><p>Let's create a funtion to use this all info and do actual work. we will see each task in function one by one. Start by saving clipboard string into a variable</p><pre>text = clipboard.paste()</pre><p>A query needs to be created so that we can search for it on any search engine. And that will be done by combining our text to be searched and the sites list. One more thing we cannot enter empty spaces in URL so we will replace them all with "+" symbol.</p><pre>query = text + sites
+query = query.replace(" ", "+")
+</pre><p>Compose final URL to be searched for based on the search engine choice and save it in a variable.</p><pre>if bchoice == 0:
+    openbrow = "https://duckduckgo.com/?q=" + query
+else:
+    openbrow = "https://www.google.com/search?q=" + query</pre><p>Now we can open web browser and enter the URL using "open" method on "webbrowser" but new window for every question will be mess so we keep the new attribute as "new=2" and we also want to keep that tab in focus so "autoraise=True"</p><pre>webbrowser.open(openbrow, new=2, autoraise=True)</pre><p>The final funtion will look as following</p><pre>def function_1():
+    text = clipboard.paste()
+    print(text)
+
+    query = text + sites
+    query = query.replace(" ", "+")
+
+    if bchoice == 0:
+        openbrow = "https://duckduckgo.com/?q=" + query
+    else:
+        openbrow = "https://www.google.com/search?q=" + query
+
+    webbrowser.open(openbrow, new=2, autoraise=True)</pre><p>Only thing left is to trigger this funtion when someone presses Ctrl key and C key at once. That's when a text is coppied into the clipboard. </p><pre>with keyboard.GlobalHotKeys({
+    '&lt;ctrl&gt;+c': function_1}) as h:
+    h.join()</pre><p>DONE!!! </p><p>Now just run the file and you will be good to go.</p><p>Source code of this entire bot can be found at <a href="https://github.com/vinaynpp/searchbot" title="Github link" target="_blank" rel="noopener noreferrer">https://github.com/vinaynpp/searchbot</a></p><p> </p></div><footer class="post__footer"><div class="post__footer__col"><ul class="post__tag"><li><a href="https://vinaypanchal.com/tags/coding/">Coding</a></li></ul><div class="post__share"></div></div><nav class="post__nav"><div class="post__nav__prev">Previous Post<h5><a href="https://vinaypanchal.com/high-school-research.html" class="inverse" rel="prev">High School Research</a></h5></div></nav><div class="post__related"><h3 class="u-h5">Related posts</h3><div class="post__related__wrap"><figure><a href="https://vinaypanchal.com/high-school-research.html"><img src="https://vinaypanchal.com/media/posts/1/responsive/CAT-MONKEY-1-xs.jpg" loading="lazy" alt=""></a><figcaption><h4><a href="https://vinaypanchal.com/high-school-research.html" class="inverse">High School Research</a></h4><time datetime="2021-11-29T18:32">November 29, 2021</time></figcaption></figure></div></div></footer></article></main><footer class="footer"><div class="footer__copyright">Made by Vinay Panchal</div><div class="footer__social"></div></footer></div><script defer="defer" src="https://vinaypanchal.com/assets/js/scripts.min.js?v=b1f07db09e44ca999e985e714f8eba4e"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.navbar'};</script><script>/*<![CDATA[*/var images=document.querySelectorAll("img[loading]");for(var i=0;i<images.length;i++){if(images[i].complete){images[i].classList.add("is-loaded")}else{images[i].addEventListener("load",function(){this.classList.add("is-loaded")},false)}};/*]]>*/</script></body></html>
