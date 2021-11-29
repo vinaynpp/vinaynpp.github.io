@@ -1,2 +1,0 @@
-# vinaynpp.github.io
-PORTFOLIO
