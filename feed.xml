@@ -3,7 +3,7 @@
     <title>Keen Psyche</title>
     <link href="https://vinaypanchal.com/feed.xml" rel="self" />
     <link href="https://vinaypanchal.com" />
-    <updated>2021-11-29T21:42:32+05:30</updated>
+    <updated>2021-11-29T21:46:48+05:30</updated>
     <author>
         <name>Vinay Panchal</name>
     </author>
@@ -18,14 +18,16 @@
         <id>https://vinaypanchal.com/simple-search-bot-in-python.html</id>
             <category term="Coding"/>
 
-        <updated>2021-11-29T21:42:32+05:30</updated>
+        <updated>2021-11-29T21:46:48+05:30</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://vinaypanchal.com/media/posts/2/download.jpg" alt="" />
                     Greetings!!! In this blog we will see how to make a Bot&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <img src="https://vinaypanchal.com/media/posts/2/download.jpg" alt="" />
                 <p>Greetings!!!</p>
 <p>In this blog we will see how to make a Bot in python which will search everything you copy to clipboard. Source code at the end of blog.</p>
 <p>Past Covid-19 all examinations are conducted online and we all know why study if we can search everything on the internet. Particularly my university asked us to attempt exam through google form. So we had to follow a sequence of steps to search each question on the internet and get the solution.</p>
