@@ -14,7 +14,7 @@
             "url": "https://vinaypanchal.com/savings-vs-investment.html",
             "title": "Savings vs Investment",
             "summary": "Hello everyone, as every other blog even this will include stuff in&hellip;",
-            "content_html": "<p>Hello everyone, as every other blog even this will include stuff in a more simple and understandable perspective </p>",
+            "content_html": "<p>Hello everyone, as every other blog even this will include stuff in a more simple and understandable perspective.</p>\n<p>So before starting with the whole Savings vs investment thing what is the core ideology that differentiates one from another, Let's look at some money related concepts about how it came into existence in the first place and what is money anyways.</p>\n<h2>History</h2>\n<figure class=\"post__image post__image--center\"><img loading=\"lazy\"  src=\"https://vinaypanchal.com/media/posts/3/barter.png\" sizes=\"(max-width: 1024px) 100vw, 1024px\" srcset=\"https://vinaypanchal.com/media/posts/3/responsive/barter-xs.png 300w ,https://vinaypanchal.com/media/posts/3/responsive/barter-sm.png 480w ,https://vinaypanchal.com/media/posts/3/responsive/barter-md.png 768w ,https://vinaypanchal.com/media/posts/3/responsive/barter-lg.png 1024w\"  alt=\"\" width=\"1500\" height=\"1088\"></figure>",
             "image": "https://vinaypanchal.com/media/posts/3/paisa.jpg",
             "author": {
                 "name": "Vinay Panchal"
@@ -23,7 +23,7 @@
                    "Research"
             ],
             "date_published": "2022-01-29T21:27:04+05:30",
-            "date_modified": "2022-01-29T21:30:56+05:30"
+            "date_modified": "2022-01-29T21:44:51+05:30"
         },
         {
             "id": "https://vinaypanchal.com/simple-search-bot-in-python.html",

@@ -3,7 +3,7 @@
     <title>Vinay Panchal</title>
     <link href="https://vinaypanchal.com/feed.xml" rel="self" />
     <link href="https://vinaypanchal.com" />
-    <updated>2022-01-29T21:30:56+05:30</updated>
+    <updated>2022-01-29T21:44:51+05:30</updated>
     <author>
         <name>Vinay Panchal</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://vinaypanchal.com/savings-vs-investment.html</id>
             <category term="Research"/>
 
-        <updated>2022-01-29T21:30:56+05:30</updated>
+        <updated>2022-01-29T21:44:51+05:30</updated>
             <summary>
                 <![CDATA[
                         <img src="https://vinaypanchal.com/media/posts/3/paisa.jpg" alt="Savings vs Investment" />
@@ -28,7 +28,10 @@
         <content type="html">
             <![CDATA[
                     <img src="https://vinaypanchal.com/media/posts/3/paisa.jpg" alt="Savings vs Investment" />
-                <p>Hello everyone, as every other blog even this will include stuff in a more simple and understandable perspective </p>
+                <p>Hello everyone, as every other blog even this will include stuff in a more simple and understandable perspective.</p>
+<p>So before starting with the whole Savings vs investment thing what is the core ideology that differentiates one from another, Let's look at some money related concepts about how it came into existence in the first place and what is money anyways.</p>
+<h2>History</h2>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://vinaypanchal.com/media/posts/3/barter.png" sizes="(max-width: 1024px) 100vw, 1024px" srcset="https://vinaypanchal.com/media/posts/3/responsive/barter-xs.png 300w ,https://vinaypanchal.com/media/posts/3/responsive/barter-sm.png 480w ,https://vinaypanchal.com/media/posts/3/responsive/barter-md.png 768w ,https://vinaypanchal.com/media/posts/3/responsive/barter-lg.png 1024w"  alt="" width="1500" height="1088"></figure>
             ]]>
         </content>
     </entry>
