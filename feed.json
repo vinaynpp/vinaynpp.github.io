@@ -10,6 +10,34 @@
     },
     "items": [
         {
+            "id": "https://vinaypanchal.com/what-is-web-30-semantic-web-in-the-journey-of-www/",
+            "url": "https://vinaypanchal.com/what-is-web-30-semantic-web-in-the-journey-of-www/",
+            "title": "What is Web 3.0 / Semantic Web in the Journey of WWW?",
+            "summary": "Greetings! Everyone! Today we'll be talking about the upcoming decentralized Blockchain based&hellip;",
+            "content_html": "<p>Greetings! Everyone! Today we'll be talking about the upcoming decentralized Blockchain based Internet. The flow will start from birth of WWW or the Web 1.0 , go through Web 2.0 (Social Web) and Web 3.0 (Semantic Web) end at Web 4.0 (Invisible Web). </p>",
+            "author": {
+                "name": "Vinay Panchal"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-02-07T21:19:21+05:30",
+            "date_modified": "2022-02-07T21:45:19+05:30"
+        },
+        {
+            "id": "https://vinaypanchal.com/everything-distributed/",
+            "url": "https://vinaypanchal.com/everything-distributed/",
+            "title": "Everything Distributed",
+            "summary": "Computing Storing Transfering",
+            "content_html": "<p>Computing<br>Storing<br>Transfering</p>",
+            "author": {
+                "name": "Vinay Panchal"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-02-07T18:52:26+05:30",
+            "date_modified": "2022-02-07T19:01:32+05:30"
+        },
+        {
             "id": "https://vinaypanchal.com/savings-vs-investment/",
             "url": "https://vinaypanchal.com/savings-vs-investment/",
             "title": "Savings vs Investments",

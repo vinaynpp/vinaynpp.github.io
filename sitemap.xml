@@ -5,6 +5,10 @@
 <loc>https://vinaypanchal.com/</loc>
 </url>
 <url>
+<loc>https://vinaypanchal.com/everything-distributed/</loc>
+<lastmod>2022-02-07T19:01:32+05:30</lastmod>
+</url>
+<url>
 <loc>https://vinaypanchal.com/high-school-research/</loc>
 <lastmod>2021-11-29T18:46:32+05:30</lastmod>
 <image:image>
@@ -67,5 +71,9 @@
 <image:loc>https://vinaypanchal.com/media\posts\2/download.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
+</url>
+<url>
+<loc>https://vinaypanchal.com/what-is-web-30-semantic-web-in-the-journey-of-www/</loc>
+<lastmod>2022-02-07T21:45:19+05:30</lastmod>
 </url>
 </urlset>
